@@ -1,0 +1,51 @@
+
+body{
+	background-color: #FEFEE2;
+}
+h1{
+	text-align: center;
+	margin-right: 100px;
+}
+
+img{
+	width: 03%;
+	height: auto;
+}
+nav{
+	position: relative;
+	margin-bottom: 10px;
+
+}
+span{
+	text-align: center;
+	margin-left: 70px;
+	margin-top: 100px;
+	padding-bottom: 610px;
+	padding-left: 1400px;
+	border-radius: 10px;
+}
+
+
+#nav{
+		padding-left: 400px;
+		text-align: center;
+}
+.nav_menu{
+	text-align: center;
+	padding-left: 50px;
+}
+#hello{
+	margin-left: 350px;
+}
+#form{
+	text-align: center;
+	position: relative;
+	padding-left: 50px;
+}
+
+#img{
+	margin-right: 1020px;
+	}
+#check{
+	margin-left: 1250px;
+}
