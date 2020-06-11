@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA_Compatble" content="ie=edge"/>
+	<title>Benjamin Burstein - Portfolio</title>
+	<link rel="stylesheet" href="cv.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div style="margin-bottom: 20px;" class="container">
+		<div class="wrapper">
+			<div class="content-side">
+				<div class="content-side-animation"></div>
+				<header>
+					<span class="logo" id="logo">B. Burstein</span>
+					<nav>
+						<ul>
+							<li><a href="#" id="aboutLink">À propos</a></li>
+							<li><a href="#" id="skillsLink">Compétences</a></li>
+							<li><a href="#" id="expLink">Expérience</a></li>
+							<li><a href="#" id="contactLink">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<section style="margin-bottom: 300px;" class="main" id="main">
+					<h1 class="main-animation">Bonjour,</h1>
+					<h1 class="main-animation">Je suis Web developper</h1>
+					<p class="main-animation">Bachelor 2ème année</p>
+					<a href="#" class="main-animation">Contactez moi</a>
+				</section>
+
+				<section class="about" id="about">
+					<h1>À propos</h1>
+					<p>Je suis étudiant à Webtech-Institut en 2e années de bachelor. J'ai 19 ans et je suis à la recherche d'une alternance dans le domaine du développement web pour ma 3ᵉ année de bachelor avant d'entamer mes deux dernière années de master.  Je suis autonome, attentif et passionné par le secteur de l'informatique et de la digitale.</p>
+					
+				</section>
+
+				<section class="skills" id="skills">
+					<h1>Compétence</h1>
+					<p>Voici l'ensemble de mes Hard Skills. J'ai développé ce site en HTML/CSS et JS en utilisant le framework Ajax pour le formulaire de contact. Je l'ai ensuite hébergé via le software Pivotal en utilisant Java Spring.</p> 
+					<div class="skills-card">
+						<div id="html" class="html">
+							<img src="htmlcss.png" align="">
+							<h3>html</h3>
+							<p></p>
+						</div>
+						<div id="python" class="python">
+							<img src="python.jpg" align="">
+							<h3>python</h3>
+							<p></p>
+						</div>
+						<div id="js" class="js">
+							<img src="js.png" align="">
+							<h3>javascript</h3>
+							<p></p>
+						</div>
+						<div id="boot" class="boot">
+							<img src="bootstrap.jpg" align="">
+							<h3>bootstrap</h3>
+							<p></p>
+						</div>
+						<div id="react" class="react">
+							<img src="react.png" align="">
+							<h3>React</h3>
+							<p></p>
+						</div>
+						<div id="java" class="java">
+							<img src="java.png" align="">
+							<h3>Java</h3>
+							<p></p>
+						</div>
+						<div id="php" class="php">
+							<img src="php.png" align="">
+							<h3>Php</h3>
+							<p></p>
+						</div>
+						<div id="wordpress" class="wordpress">
+							<img src="wordpress.jfif	" align="">
+							<h3>Wordpress</h3>
+							<p></p>
+						</div>
+						<div id="mysql" class="mysql">
+							<img src="mysql.png" align="">
+							<h3>Mysql</h3>
+							<p></p>
+						</div>
+					</div>
+				</section>
+				<section class="exp" id="exp">
+					<h1>Expérience</h1>
+					<p>Voici les différentes expériences que j'ai pu accomplir.</p>
+					<div class="exp-card">
+						<div class="html">
+							<h3>Webtech</h3>
+							<p>Bachelor 1 & 2</p>
+							<img style="width: 100px; height: 100px;" src="webtech.png" align="">
+						</div>
+						<div class="css">
+							<h3>Londres</h3>
+							<p>2 mois de cour à l'étranger</p>
+							<img style="width: 70px; height: 70px; " src="londres.jpg" align="">
+						</div>
+						<div class="javascript">
+							<h3>Dublin</h3>
+							<p>2 mois de cour à l'étranger</p>
+							<img style="width: 70px; height: 70px; " src="dublin.jpg" align="">
+						</div>
+						<div class="bootstrap">
+							<h3>Ireas</h3>
+							<p>3 mois de stage - Full Stack Wordpress developper</p>
+							<img src="ireas.png" align="">
+						</div>
+					</div>
+				</section>
+
+				<section class="contact" id="contact">
+					<h1>Contactez Moi</h1>
+					
+					<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+						
+						<input id="nameField"  name="entry.2041111271" type ="text" placeholder="Entrez votre nom" type="text" required />
+						<input id="emailField" name="entry.1890562048" placeholder="Entrez votre mail" type="email" required />
+						<textarea id="messField" name="entry.160806751" placeholder="Entrez votre mess" type="text" cols="30" rows="10" required> </textarea>
+						<button class="common_btn" id="send" type="submit">Envoyer un message</button>
+					</form>
+					
+					<script>
+						function postToGoogle() {
+	                var field1 = $("#nameField").val();
+	                var field2 = $("#emailField").val();
+	                var field3 = $("#messField").val();
+	            
+	        
+			        if(field1 == ""){
+			          alert('Please Fill Your Name');
+			          document.getElementById("nameField").focus();
+			          return false;
+			        }
+			        if(field2 == ""){
+			          alert('Please Fill Your Email');
+			          document.getElementById("emailField").focus();
+			          return false;
+			        }
+			        if(field3 == ""){
+			          alert('Please Fill Your Mobile Number');
+			          document.getElementById("messField").focus();
+			          return false;
+			        }
+
+
+			        
+			  
+			                $.ajax({
+			                    url: "https://docs.google.com/forms/d/1nadbrr_9WTv6fD3jfdcu1-PEuZJ59EH_WOKFKkgbRww/formResponse?",
+			          data: {"entry.2041111271": field1, "entry.1890562048": field2, "entry.160806751": field3},
+			                    type: "POST",
+			                    dataType: "xml",
+			                    success: function(d)
+			          {
+			          },
+			          error: function(x, y, z)
+			            {
+
+			            alert("Votre message a été envoyé");
+			            $('#form').get(0).reset();
+			              
+			            }
+			                });
+			        return false;
+			            }
+					</script>
+				</section>
+			</div>
+
+			<div class="assets-side">
+				<div style="margin-top : 100px;" class="img">
+					<img src="charlie.jpg" alt="">
+				</div>
+				<div class="links">
+					<div class="twitter">
+						<a href="https://github.com/benjaminburstein/Projets" target="_blank">GitHub</a>
+					</div>
+					
+					<div class="facebook">
+						<a href="https://drive.google.com/file/d/1EBiX79IzyuYqX0rTXLhB6_vgRQjBIvRB/view?usp=sharing" target="_blank">Mon Cv</a>
+					</div>
+
+					<div class="instagram">
+						<a href="https://www.linkedin.com/in/benjamin-burstein/" target="_blank">linkedin</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div  id="open-modal" class="open-modal">+</div>			
+		<div class="modal">
+			<div class="modal-content">
+				<span class="close-modal">&times</span>
+				<h1>Informations de contact</h1>
+				<div class="mail">
+					<img src="" alt="">
+					<p>Benjamin.burstein@webtech-institute.com</p>
+				</div>
+				<div class="adresse">
+					<img src="" alt="">
+					<p>Marolles-en-brie</p>
+				</div>
+				<div class="contact-details">
+					<img src="" alt="">
+					<p>06 28 02 54 94</p>
+				</div>
+			</div>
+		</div>
+	<script src="cv.js"></script>
+</body>
+</html>
